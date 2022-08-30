@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/*
+Theme Name: Josh Klein
+Theme URI: 
+Author: Josh Klein
+Author URI: https://www.jklein.me/
+Version: 1
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Roboto&display=swap');
+
+
+/* GLOBALS & RESETS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: 'Varela Round';
+    margin: 0;
+    background: radial-gradient(circle at 100% 100%, #ff69b430 10%, #ffffff30 40%, #00fefe30 100%) fixed;
+}
+
+header, footer {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+header {
+    margin: 0;
+    padding: 5rem 0;
+    max-width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 8rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+header p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* SOCIALS */
+
+.socials {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: calc(50% - 245px / 2);
+    z-index: 1;
+}
+
+.socials-frame {
+    padding: 0.5rem;
+    gap: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.5);
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    line-height: 0;
+    border-radius: 0 0 .25rem .25rem;
+    backdrop-filter: blur(.2rem);
+    -webkit-backdrop-filter: blur(.2rem);
+}
+
+/* CONTENT */
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+section h1 {
+    font-size: 2rem;
+}
+
+a {
+    color: #fff;
+    font-size: 2em;
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 1rem #00fefe;
+}
+
+.projects {
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    margin-bottom: 1.5rem;
+}
+
+.project-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.project-thumbnail {
+    width: 50%;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    transition-duration: 0.3s;
+}
+
+.project-thumbnail img:hover {
+    transform: translate(-.25rem, -.25rem);
+    box-shadow: .25rem .25rem 1rem #0006;
+}
+
+.project-item-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* CONTACT BOX & FORM */
+
+.contact {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-box {
+    width: 400px;
+    background-color: #333;
+    box-shadow: 0 0 2rem cyan;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.contact-box form {
+    margin: 2rem;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .75rem;
+}
+
+#contact-close {
+    position: absolute;
+    margin: .25rem .5rem;
+}
+
+input {
+    line-height: 1.5rem;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 .5rem cyan;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 .5rem cyan;
+}
+
+.submit {
+    width: 100px;
+    align-self: center;
+    line-height: 1.5rem;
+}
+
+/* QUERIES */
+
+@media screen and (max-width: 769px) {
+    header h1 {
+        font-size: 6rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .socials {
+        height: auto;
+        width: 100vw;
+    }
+
+    .socials-frame {
+        flex-direction: row;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 481px) {
+
+    .socials {
+        left: 0;
+    }
+
+    .socials-frame {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .contact-box {
+        width: 90%;
+    }
+
+    .project-item {
+        flex-direction: column;
+    }
+
+    .project-thumbnail {
+        width: 100%;
+    }
+
+    .project-item-info {
+        width: 100%;
+    }
+
+}
