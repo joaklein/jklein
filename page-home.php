@@ -21,7 +21,7 @@
 
             <div class="project-item">
                 <div class="project-info">
-                    <img src="<?php echo wp_get_attachment_url($project['project-thumbnail']); ?>" alt="Gents by Genna Thumbnail">
+                    <img src="<?php echo wp_get_attachment_url($project['project-thumbnail']); ?>" alt="<?php echo ($project['project-title']); ?> Thumbnail">
                     <div class="project-text">
                         <h2><?php echo ($project['project-title']); ?></h2>
                         <p><?php echo ($project['project-description']); ?></p>
