@@ -48,10 +48,12 @@ function crb_attach_post_options()
                 ->add_fields(array(
                     Field::make('image', 'project-thumbnail', 'Project Thumbnail')
                         ->set_width(10),
+                    Field::make('text', 'project-code-link', 'Project Code Link')
+                        ->set_width(30),
                     Field::make('text', 'project-link', 'Project URL')
-                        ->set_width(45),
+                        ->set_width(30),
                     Field::make('text', 'project-title', 'Project Title')
-                        ->set_width(45),
+                        ->set_width(30),
                     Field::make('textarea', 'project-description', 'Project Description')
                 )),
         ));

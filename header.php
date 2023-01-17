@@ -30,28 +30,25 @@
 
 <body>
 
-    <div class="socials">
-        <div class="socials-frame">
-            <a href="<?php echo carbon_get_theme_option('linkedin_link'); ?>" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="<?php echo carbon_get_theme_option('twitter_link'); ?>" target="_blank"><i class="fab fa-twitter-square"></i></a>
-            <a href="<?php echo wp_get_attachment_url(carbon_get_theme_option('resume')); ?>" target="_blank"><i class="fas fa-file-pdf"></i></a>
-            <a href="<?php echo carbon_get_theme_option('soundcloud_link'); ?>" target="_blank"><i class="fab fa-soundcloud"></i></a>
-            <a href="<?php echo carbon_get_theme_option('github_link'); ?>" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="javascript:void(0);" id="contact"><i class="fas fa-envelope"></i></a>
-        </div>
-    </div>
+    <nav id="navbar">
+        <div class="menu-bar" id="menu-bar">
+            <h2>JK</h2>
+            <a href="javascript:void(0)" id="side-menu-open"><i class="fa-solid fa-bars"></i></a>
+            <div class="desktop-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
 
-    <div class="contact">
-        <div class="contact-box">
-            <a href="javascript:void(0);" id="contact-close">x</a>
-            <form action="<?php echo carbon_get_theme_option('form_link'); ?>" method="POST">
-                <input type="hidden" name="_next" value="https://jklein.me/">
-                <input type="text" name="name" placeholder="Name" maxlength="50" required>
-                <input type="email" name="email" placeholder="Email" maxlength="50" required>
-                <input type="text" name="subject" placeholder="Subject" maxlength="50" required>
-                <textarea rows="5" name="message" placeholder="Type your message here!" maxlength="300"
-                    required></textarea>
-                <button type="submit" name="submit" class="submit">Submit</button>
-            </form>
         </div>
-    </div>
+        <div class="side-menu">
+            <div class="side-menu-close">
+                <a href="javascript:void(0)" id="side-menu-close"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>

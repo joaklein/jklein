@@ -1,29 +1,40 @@
 <?php get_header(); ?>
 
 <header>
-    <h1><?php the_field('header-title'); ?></h1>
-    <p><?php the_field('header-statement-1'); ?></p>
-    <p><?php the_field('header-statement-2'); ?></p>
+    <div id="about" class="header-text">
+        <p>Hail, virtual adventurer. Here resides yet another</p>
+        <h2>Front End Web Developer.</h2>
+        <p>My name is</p>
+        <h1>Josh Klein.</h1>
+        <p>Along the way of teaching myself over the past few years, I have discovered that making things work as
+            simply as possible is my nuance.</p>
+        <p>See some of my projects below.</p>
+    </div>
 </header>
 
-<div class="projects">
-    <h2>Projects</h2>
+<section>
+    <div id="projects" class="projects">
+        <?php
+        $projects  = get_field('projects');
 
-    <?php
-    $projects  = get_field('projects');
+        foreach ($projects  as $project) { ?>
 
-    foreach ($projects  as $project) { ?>
-        <div class="project-item">
-            <div class="project-thumbnail">
-                <a target="_blank" href="<?php echo ($project['project-link']); ?>"><img src="<?php echo wp_get_attachment_url($project['project-thumbnail']); ?>"></a>
+            <div class="project-item">
+                <div class="project-info">
+                    <img src="<?php echo wp_get_attachment_url($project['project-thumbnail']); ?>" alt="Gents by Genna Thumbnail">
+                    <div class="project-text">
+                        <h2><?php echo ($project['project-title']); ?></h2>
+                        <p><?php echo ($project['project-description']); ?></p>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="<?php echo ($project['project-code-link']); ?>" target="_blank">Code</a>
+                    <a href="<?php echo ($project['project-link']); ?>" target="_blank">Site</a>
+                </div>
             </div>
-            <div class="project-item-info">
-                <h2><?php echo ($project['project-title']); ?></h2>
-                <p><?php echo ($project['project-description']); ?></p>
-            </div>
-        </div>
-    <?php } ?>
+        <?php } ?>
 
-</div>
+    </div>
+</section>
 
 <?php get_footer(); ?>
