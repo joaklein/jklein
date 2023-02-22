@@ -112,6 +112,11 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 1rem;
+    width: 100%;
 }
 
 .links {
@@ -119,7 +124,7 @@ nav a:hover {
     flex-direction: column;
     align-items: flex-end;
     gap: 2rem;
-    height: calc(100% - 3rem);
+    height: 100%;
     justify-content: center;
 }
 
