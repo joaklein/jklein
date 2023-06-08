@@ -1,17 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    let prevScrollpos = window.pageYOffset
     let links = document.querySelectorAll('.links > a')
-
-    window.onscroll = () => {
-        let currentScrollPos = window.pageYOffset
-        if (prevScrollpos > currentScrollPos) {
-            document.querySelector('#menu-bar').style.top = '0'
-        } else {
-            document.querySelector('#menu-bar').style.top = '-3rem'
-        }
-        prevScrollpos = currentScrollPos;
-    }
 
     document.querySelector('#side-menu-open').addEventListener('click', () => {
         document.querySelector('body').classList.add('hide-overflow')
