@@ -172,6 +172,7 @@ header {
 .project-info {
     overflow: hidden;
     height: calc(100% - 4rem);
+    width: 100%;
     position: relative;
 }
 
