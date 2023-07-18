@@ -37,4 +37,19 @@
     </div>
 </section>
 
+<section>
+
+    <div id="partners">
+        <h1>Current Partners</h1>
+        <div class="partner-logos">
+            <a href="https://www.indyambassadors.org" target="_blank">
+                <img src="https://indyambassadors.org/wp-content/themes/indy-ambassadors/images/indy-ambassadors-logo.png">
+            </a>
+            <a href="https://syf.org" target="_blank">
+                <img src="https://syf.org/wp-content/uploads/2023/06/SYF-Logo-Horiz-white.png">
+            </a>
+        </div>
+    </div>
+</section>
+
 <?php get_footer(); ?>

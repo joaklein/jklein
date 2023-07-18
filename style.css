@@ -250,6 +250,35 @@ header {
     transform: translateX(0);
 }
 
+#partners {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 4rem;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+#partners a {
+    transition: all .5s ease-in-out 0s;
+}
+
+#partners a:hover {
+    scale: 1.05;
+}
+
+#partners img {
+    display: inline-block;
+    height: 100%;
+    max-height: 4rem;
+}
+
 #contact {
     display: flex;
     flex-direction: column;
@@ -317,6 +346,10 @@ header {
 
     .project-text {
         opacity: 0;
+    }
+
+    #partners {
+        font-size: 1.5vw;
     }
 
     #contact {
