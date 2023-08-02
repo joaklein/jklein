@@ -142,6 +142,7 @@ header {
     justify-content: center;
     gap: 1rem;
     padding-top: 3rem;
+    text-align: center;
     width: 100%;
 }
 
