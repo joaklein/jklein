@@ -133,6 +133,7 @@ nav a:hover {
 header {
     height: 100vh;
     display: flex;
+    justify-content: center;
 }
 
 .header-text {
@@ -141,6 +142,7 @@ header {
     justify-content: center;
     gap: 1rem;
     padding-top: 3rem;
+    width: 100%;
 }
 
 .header-text h1, .header-text h2 {
@@ -338,6 +340,7 @@ header {
 
     .header-text {
         font-size: 1.75vw;
+        width: 60%;
     }
 
     .projects {
