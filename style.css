@@ -198,8 +198,8 @@ header {
     opacity: 1;
 }
 
-.project-info:hover .project-text,
-.project-info:active .project-text {
+.project-item:hover .project-text,
+.project-item:active .project-text {
     opacity: 1;
 }
 
@@ -210,8 +210,8 @@ header {
     object-fit: cover;
 }
 
-.project-info:hover img,
-.project-info:active img {
+.project-item:hover img,
+.project-item:active img {
     transform: scale(1.05);
 }
 
