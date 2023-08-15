@@ -321,7 +321,15 @@ header {
     text-align: center;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1080px) {
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 740px) {
 
     body {
         padding: 0 4rem;
@@ -346,7 +354,7 @@ header {
 
     .projects {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .project-text {
