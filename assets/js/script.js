@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    let links = document.querySelectorAll('.links > a')
+    // NAV STUFF - START
+    const mobileLinks = document.querySelectorAll('.links a')
 
     document.querySelector('#side-menu-open').addEventListener('click', () => {
         document.querySelector('body').classList.add('hide-overflow')
@@ -14,12 +15,33 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector('.side-menu').classList.remove('side-menu-slide')
     })
 
-    links.forEach(el => {
+    mobileLinks.forEach((el, index) => {
         el.addEventListener('click', () => {
             document.querySelector('body').classList.remove('hide-overflow')
             document.querySelector('#navbar').classList.remove('blur')
             document.querySelector('.side-menu').classList.remove('side-menu-slide')
+            flipBox(index)
         })
-    });
+    }); // NAV STUFF - END
 
+    // PARALLAX STUFF - START
+    const headerBG = document.querySelector('#header-bg')
+    const headerText = document.querySelector('.header-text')
+
+    window.addEventListener('scroll', () => {
+
+        let value = window.scrollY
+
+        headerBG.style.top = `${value * .8}px`
+        headerText.style.top = `${value * .6}px`
+        headerBG.style.filter = `blur(${value * .01}px)`
+        headerText.style.filter = `blur(${value * .01}px)`
+    }) // PARALLAX STUFF - END
+})
+
+window.addEventListener('load', () => {
+        // HEADER ANIMATIONS - START
+        document.querySelector('#header-bg').classList.add('fade-in')
+        document.querySelector('.header-text').classList.add('slide-in__from-right')
+        // HEADER ANIMATIONS - END    
 })
