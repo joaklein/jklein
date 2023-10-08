@@ -182,6 +182,7 @@ header {
     background: linear-gradient(to right, #01d798, #df48a5, #1aa1f7);
     width: fit-content;
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     padding: 2rem 0;
 }
