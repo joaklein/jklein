@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // PARALLAX STUFF - START
     const headerBG = document.querySelector('#header-bg')
     const headerText = document.querySelector('.header-text')
+    const sectionOne = document.querySelector('#section-one-bg')
 
     window.addEventListener('scroll', () => {
 
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         headerText.style.top = `${value * .6}px`
         headerBG.style.filter = `blur(${value * .01}px)`
         headerText.style.filter = `blur(${value * .01}px)`
+        sectionOne.style.top = `-${value * .15}px`
     }) // PARALLAX STUFF - END
 })
 

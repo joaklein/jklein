@@ -60,6 +60,27 @@ function getJson($url)
     </div>
 </header>
 
+<section id="section-one">
+    <div id="section-one-bg">
+        <img src="<?php echo get_template_directory_uri(); ?>/technomancerb.png" alt="">
+    </div>
+    <div class="section-one-text">
+        <div class="section-one-text-left">
+            <h1>What is this?</h1>
+            <h3>My gallery of my syntactic summons.</h3>
+            <h3>A glimpse of my illuminatory illusions.</h3>
+        </div>
+        <div class="section-one-text-right">
+            <h1>Who are you?</h1>
+            <h3>Practitioner of the digital arts.</h3>
+            <h3>Conjurer of virtual creations.</h3>
+        </div>
+        <div class="section-one-text-bottom">
+            <h3>Okay.. I'm just a web developer. See some of my projects below.</h3>
+        </div>
+    </div>
+</section>
+
 <section>
     <h1 class="projects-header">Projects</h1>
     <div id="projects" class="projects">
