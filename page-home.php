@@ -67,16 +67,16 @@ function getJson($url)
     <div class="section-one-text">
         <div class="section-one-text-left">
             <h1>What is this?</h1>
-            <h3>My gallery of my syntactic summons.</h3>
+            <h3>My gallery of syntactic summons.</h3>
             <h3>A glimpse of my illuminatory illusions.</h3>
         </div>
         <div class="section-one-text-right">
-            <h1>Who are you?</h1>
+            <h1>Who am I?</h1>
             <h3>Practitioner of the digital arts.</h3>
             <h3>Conjurer of virtual creations.</h3>
         </div>
         <div class="section-one-text-bottom">
-            <h3>Okay.. I'm just a web developer. See some of my projects below.</h3>
+            <h3>Okay.. I'm just a web developer and my name is Josh Klein. See some of my projects and partners below.</h3>
         </div>
     </div>
 </section>

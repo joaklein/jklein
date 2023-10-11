@@ -402,8 +402,8 @@ header {
 }
 
 .socials:hover {
-    box-shadow: 0 0 1rem #df48a5,
-        inset 0 0 .5rem #df48a5;
+    box-shadow: 0 0 1rem var(--color-txt-acc),
+        inset 0 0 .5rem var(--color-txt-acc);
 }
 
 .socials a {
@@ -462,7 +462,7 @@ header {
     .section-one-text-left {
         text-align: left;
     }
-    
+
     .section-one-text-right {
         text-align: right;
     }
@@ -484,7 +484,7 @@ header {
         opacity: 0;
     }
 
-    #partners {
+    #partners h1 {
         font-size: 1.5vw;
     }
 
