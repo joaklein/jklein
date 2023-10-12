@@ -29,26 +29,3 @@
 </head>
 
 <body>
-
-    <nav id="navbar">
-        <div class="menu-bar" id="menu-bar">
-            <h2>JK</h2>
-            <a href="javascript:void(0)" id="side-menu-open"><i class="fa-solid fa-bars"></i></a>
-            <div class="desktop-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-        </div>
-        <div class="side-menu">
-            <div class="side-menu-close">
-                <a href="javascript:void(0)" id="side-menu-close"><i class="fa-solid fa-xmark"></i></a>
-            </div>
-            <div class="links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-    </nav>
