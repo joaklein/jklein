@@ -42,7 +42,7 @@ img {
     -webkit-filter: sepia(100%) hue-rotate(36deg) brightness(63%);
 }
 
-.project-item:hover img {
+.project-info:hover img {
     filter: none;
     -webkit-filter: none;
 }
