@@ -200,6 +200,12 @@ a {
         top: 1rem;
     }
 
+    .project-links {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+      }
+
     .partner-logos {
         gap: 2rem;
     }
